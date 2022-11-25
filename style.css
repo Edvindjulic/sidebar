@@ -12,16 +12,19 @@ aside {
     inset: 0;
     width: 12rem;
     background-color: #88888888;
+    transition: all 500ms;
+    overflow-x: hidden;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
+.close {
+    width: 0;
 }
+
 
 li {
     list-style: none;
     padding: 1rem 0;
+    white-space: nowrap;
 }
 
 li:hover {
@@ -34,6 +37,14 @@ li:hover {
     height: 2rem;
     object-fit: cover;
     object-position: 0;
+}
+
+.burger-menu {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    font-size: 48px;
+    color: var(--primary-color);
 }
 
 /* Re-usable classes */
@@ -67,4 +78,8 @@ li:hover {
 
 .p1 {
     padding: 1rem;
+}
+
+.hidden {
+    display: none;
 }

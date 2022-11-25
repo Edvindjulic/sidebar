@@ -1,0 +1,70 @@
+:root {
+    --primary-color: red;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(167, 152, 113);
+}
+
+aside {
+    position: fixed;
+    inset: 0;
+    width: 12rem;
+    background-color: #88888888;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    padding: 1rem 0;
+}
+
+li:hover {
+    background-color: #CCCCCC55;
+    border-right: .3rem solid var(--primary-color);
+}
+
+.avatar {
+    width: 2rem;
+    height: 2rem;
+    object-fit: cover;
+    object-position: 0;
+}
+
+/* Re-usable classes */
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.gap1 {
+    gap: 1rem;
+}
+
+.m0 {
+    margin: 0;
+}
+
+.p0 {
+    padding: 0;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.p1 {
+    padding: 1rem;
+}
